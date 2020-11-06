@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  springboot:
+    build: .
+    restart: always
+    container_name: democonteiner
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongo
+  mongo:
+    image: "mongo:4.2"
+    container_name: mybasecont
+    ports:
+       - 27017:27017
