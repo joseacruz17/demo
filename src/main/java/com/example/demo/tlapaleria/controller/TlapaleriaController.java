@@ -39,7 +39,7 @@ public class TlapaleriaController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/test")
 	public String test(@RequestParam(value = "id") Integer id) {
-		return "Hello world";
+		return "Hello world2";
 	}
 
 	// @RequestMapping(method = RequestMethod.DELETE, path = "/eliminar/{id}")
